@@ -22,6 +22,11 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { FoodAndBeverageComponent } from './food-and-beverage/food-and-beverage.component';
 import { BarsComponent } from './food-and-beverage/bars/bars.component';
 import { RestaurantComponent } from './food-and-beverage/restaurant/restaurant.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -43,13 +48,18 @@ import { RestaurantComponent } from './food-and-beverage/restaurant/restaurant.c
     SignupComponent,
     FoodAndBeverageComponent,
     BarsComponent,
-    RestaurantComponent
+    RestaurantComponent,
+    HomeComponent,
+    HeaderComponent,
+    SidenavListComponent,
+    NavtabsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
